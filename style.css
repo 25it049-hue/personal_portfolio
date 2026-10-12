@@ -1,0 +1,144 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f7fc;
+    color: #333;
+    line-height: 1.6;
+}
+
+header {
+    background: #2457c5;
+    color: white;
+    padding: 18px 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #ffdf70;
+}
+
+.hero {
+    background: linear-gradient(135deg, #2457c5, #7b61d1);
+    color: white;
+    text-align: center;
+    padding: 90px 20px;
+}
+
+.hero h2 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    margin-bottom: 8px;
+}
+
+.btn {
+    display: inline-block;
+    background: white;
+    color: #2457c5;
+    padding: 10px 20px;
+    margin-top: 20px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+section:not(.hero) {
+    padding: 45px 8%;
+    text-align: center;
+}
+
+section h2 {
+    color: #2457c5;
+    margin-bottom: 20px;
+}
+
+.cards {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 18px;
+}
+
+.card {
+    background: white;
+    padding: 22px;
+    border-radius: 10px;
+    box-shadow: 0 3px 12px #00000015;
+    flex: 1 1 180px;
+    max-width: 300px;
+}
+
+.card h3 {
+    color: #2457c5;
+    margin-bottom: 8px;
+}
+
+button {
+    background: #2457c5;
+    color: white;
+    border: none;
+    padding: 11px 22px;
+    margin-top: 15px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #173d91;
+}
+
+#message {
+    margin-top: 10px;
+    color: #2457c5;
+    font-weight: bold;
+}
+
+footer {
+    background: #222;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+
+@media (max-width: 600px) {
+    header {
+        flex-direction: column;
+    }
+
+    nav {
+        justify-content: center;
+    }
+
+    .hero h2 {
+        font-size: 27px;
+    }
+
+    section:not(.hero) {
+        padding: 35px 5%;
+    }
+}
